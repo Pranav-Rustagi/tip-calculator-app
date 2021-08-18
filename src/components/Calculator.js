@@ -115,7 +115,7 @@ const Calculator = props => {
     return (
         <div className="box row justify-content-between mx-auto mt-md-3 p-4 p-lg-3 col-12 col-sm-9 col-md-7 col-lg-9 col-xl-7 shadow">
             <div className="col-lg-6 py-2 px-0 px-lg-3 d-flex flex-column justify-content-between">
-                <div className="mb-4 mb-md-3 mb-lg-0">
+                <div className="mb-4 mb-md-3">
                     <label className="fw-bold mb-1 text-capitalize">bill</label>
                     <div className="input-group border border-2 border-white rounded-3">
                         <span className="input-group-text border-0 bg-transparent">
@@ -125,7 +125,7 @@ const Calculator = props => {
                     </div>
                 </div>
 
-                <div className="mb-4 mb-md-3 mb-lg-0">
+                <div className="mb-4 mb-md-3">
                     <label className="fw-bold text-capitalize">select tip %</label>
                     <div className="tip-btn-grp row justify-content-between gx-2 mt-2">
                         {
@@ -143,7 +143,7 @@ const Calculator = props => {
                     </div>
                 </div>
 
-                <div className="mb-4 mb-md-3 mb-lg-0">
+                <div className="mb-4 mb-md-3">
                     <label className="fw-bold mb-1 text-capitalize">number of people</label>
                     <div className="input-group border border-2 border-white rounded-3">
                         <span className="input-group-text border-0 bg-transparent">
