@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+$backgroundColor: #c5e4e7;
+$active: #26c0ab;
+$veryDarkCyan: #00494d;
+$input: #28767a;
+$darkCyan1: #5e7a7d;
+$darkCyan2: #7f9c9f;
+$lightCyan1: #9feae1;
+$lightCyan2: #ecf1f1;
+$white: #fff;
+
+* {
+    font-family: 'Space Mono', monospace!important;
+}
+
+#root {
+    background-color: $backgroundColor;
+
+    &, & > div {
+        min-height: 100vh;
+    }
+}
+
+header span {
+    color: $veryDarkCyan;
+    letter-spacing: 0.5rem;
+}
+
+.box {
+    min-height: 50vh;
+    border-radius: 1.4rem;
+    background-color: $white;
+
+    & > div:nth-child(2) {
+        border-radius: 0.95rem;
+        background-color: $veryDarkCyan;
+
+        .money {
+            color: $active;
+        }
+    }
+}
+
+label {
+    font-size: 0.9rem;
+    color: $darkCyan1;
+
+    span:first-child {
+        color: $white;
+    }
+
+    span:last-child {
+        color: $darkCyan2;
+        font-size: 0.65rem;
+    }
+}
+
+input {
+    font-size: 1.5rem!important;
+
+    &, &:focus {
+        color: $input!important;
+    }
+}
+
+.input-group {
+    background-color: $lightCyan2;
+
+    .input-group-text {
+        color: $darkCyan2;
+    }
+
+    &.active {
+        border-color: $active!important;
+    }
+}
+
+.tip-btn-grp > div {
+
+    input, button {
+        font-size: 1.25rem!important;
+    }
+
+    &:not(:last-child) button {
+        background-color: $veryDarkCyan;
+        color: $white;
+
+        &:hover, &.active {
+            color: $veryDarkCyan;
+            background-color: $lightCyan1;
+        }
+    }
+
+    input {
+        background-color: $lightCyan2;
+
+        &:focus, &.active {
+            border-color: $active!important;
+        }
+    }
+}
+
+.btn-reset {
+    background-color: $active;
+    color: $veryDarkCyan;
+
+    &:hover {
+        background-color: $lightCyan1;
+    }
+}
+
+@media (min-width: 1441px) {
+    .box {
+        min-height: 25vh;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .col-lg-custom {
+        width: 47%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .box {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
