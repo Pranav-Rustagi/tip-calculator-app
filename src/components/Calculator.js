@@ -109,7 +109,10 @@ const Calculator = props => {
         setTipRate(tipRates[0]);
         setCustomTipRate("");
         setPeopleCount(1);
-        document.querySelector(".tip-btn-grp .btn").classList.add("active");
+
+        let btnContainer = document.querySelector(".tip-btn-grp");
+        btnContainer.querySelector(".active").classList.remove("active");
+        btnContainer.querySelector(".btn").classList.add("active");
     }
 
     return (
